@@ -1,0 +1,2183 @@
+{
+  "id": "7f6d95b2-12d5-4d73-858b-4fc6d76e36a4",
+  "version": "2.0",
+  "name": "Caleidoscopio",
+  "url": "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app",
+  "tests": [{
+    "id": "c2858047-f3bb-48ec-bda7-24a075b4dddc",
+    "name": "Crear proyecto",
+    "commands": [{
+      "id": "f6f0053f-5544-46e1-9151-5115d18f0562",
+      "comment": "",
+      "command": "open",
+      "target": "/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c952fdd-8a9f-4664-bc07-1069a5c39438",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "770x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "310fb396-5ab9-45a9-9999-b9c9b546edbe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Proyecto",
+      "targets": [
+        ["linkText=Proyecto", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Proyecto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Proyecto')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Proyecto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57146ce1-98b0-4ac7-a326-24381e7bddf3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear nuevo",
+      "targets": [
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Proyecto/Create/cGFnZT0vSW5kZXgmYXJlYT1Qcm95ZWN0bw%3D%3D')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear nuevo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5d94c06-57e6-4e0b-9ae2-4bc79106fc64",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8338bb7-d8e7-4dbb-86f9-7fa3c0045205",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Prueba 002"
+    }, {
+      "id": "97649fcc-976e-48b7-a366-535dd943adf1",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "658727c2-c967-4a92-ac8a-a2f344b68c6d",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "PRY002"
+    }, {
+      "id": "f1eb543a-c1e4-446e-b78a-851635dbc503",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Activo",
+      "targets": [
+        ["id=EntidadNueva_Activo", "id"],
+        ["name=EntidadNueva.Activo", "name"],
+        ["css=#EntidadNueva_Activo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Activo']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e41d5a9-b369-4e00-b721-d3bd12e21b95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Guardar']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f1f9131e-a3c7-42a6-9f5e-d63defee963f",
+    "name": "Eliminar proyecto",
+    "commands": [{
+      "id": "c9659451-9681-4847-9416-2acadc56d076",
+      "comment": "",
+      "command": "open",
+      "target": "/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a0d1eb3-a143-4159-aabf-a3f79014b9fb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "867c432b-6e69-43b0-b1ec-6661bd61c69a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Proyecto",
+      "targets": [
+        ["linkText=Proyecto", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Proyecto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Proyecto')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Proyecto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0408ad9-8aaa-4e02-939d-82b2d3983e0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(3) img",
+      "targets": [
+        ["css=td:nth-child(3) img", "css:finder"],
+        ["xpath=//img[@alt='Eliminar']", "xpath:img"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32e9617f-f314-435e-9356-6dd6365ef47d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Eliminar']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a9cf6f60-53c8-4a9d-aaad-2d0df76b6505",
+    "name": "Crear esquema",
+    "commands": [{
+      "id": "3500d4f8-b278-4961-8e8b-6c366360ecb0",
+      "comment": "",
+      "command": "open",
+      "target": "/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b962ec6-7474-44f2-93cf-0629dae20316",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52e19c02-36ed-4824-ba01-1ba740731381",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Esquema",
+      "targets": [
+        ["linkText=Esquema", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Esquema')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Esquema')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Esquema')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3305bec4-3fd8-4103-b625-2537f7be1aba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear nuevo",
+      "targets": [
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Esquema/Create/0/cGFnZT0vSW5kZXgmYXJlYT1Fc3F1ZW1h')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear nuevo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0a8247d-a2c4-4ce8-ba4a-4c04c4c2fd90",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f475526-d7ea-404c-bd72-c8971e32c2ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Esquema 002"
+    }, {
+      "id": "fbdd2804-adc2-455d-a605-b610ee683529",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e58c386-5f78-441b-a78d-4fd9ae6d1f49",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "ESQ002"
+    }, {
+      "id": "d2ad10d0-bad5-4551-9590-52e55cd34e45",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Activo",
+      "targets": [
+        ["id=EntidadNueva_Activo", "id"],
+        ["name=EntidadNueva.Activo", "name"],
+        ["css=#EntidadNueva_Activo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Activo']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e640c5bd-dadf-45a0-bad1-f5d001e7e7d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_ProyectoID",
+      "targets": [
+        ["id=EntidadNueva_ProyectoID", "id"],
+        ["name=EntidadNueva.ProyectoID", "name"],
+        ["css=#EntidadNueva_ProyectoID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_ProyectoID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Gestión de Proveedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2286adb9-04a8-4c84-9e90-c2bc2779ca17",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Guardar']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9ab2cf27-ecdc-4a0e-866b-397e403e9ca1",
+    "name": "Crear atributo numérico",
+    "commands": [{
+      "id": "83afdf96-0b50-4568-9781-0bdd10f414f8",
+      "comment": "",
+      "command": "open",
+      "target": "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d481fa79-b8ad-4e03-a4ed-fea8404c90cd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "781x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba709648-24f7-4c25-9688-75449f6ab9ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo",
+      "targets": [
+        ["linkText=Atributo", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5688600-df53-4b7f-958b-51e07b6411c0",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=dropdownMenuLink",
+      "targets": [
+        ["id=dropdownMenuLink", "id"],
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=#dropdownMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "38.64990234375,14.466644287109375"
+    }, {
+      "id": "9d02be65-fe3e-4d62-88d2-87b82e3a7ca1",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=dropdownMenuLink",
+      "targets": [
+        ["id=dropdownMenuLink", "id"],
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=#dropdownMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "38.64990234375,14.466644287109375"
+    }, {
+      "id": "05d2fce9-3756-4e32-8621-c952212499a8",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=dropdownMenuLink",
+      "targets": [
+        ["id=dropdownMenuLink", "id"],
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=#dropdownMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": "38.64990234375,14.466644287109375"
+    }, {
+      "id": "c74d29a3-a6e5-4bf3-8fd9-87b1fc607bce",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuLink",
+      "targets": [
+        ["id=dropdownMenuLink", "id"],
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=#dropdownMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6145b3d7-27d4-4f6e-bd9a-04328b840d30",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo Numérico",
+      "targets": [
+        ["linkText=Atributo Numérico", "linkText"],
+        ["css=.dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo Numérico')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo/Numerico/Create/0/cGFnZT0vSW5kZXgmYXJlYT1BdHJpYnV0bw%3D%3D')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo Numérico')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4d1ce31-9e67-4229-ab67-1fe8ccb632bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "007d592c-1398-43d6-9c0d-d006124fce12",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Número"
+    }, {
+      "id": "89afdf7c-14ca-4093-8ff1-65c1fdd41f1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "786fc859-af42-47de-af33-d57021bf9f82",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Atributo numérico"
+    }, {
+      "id": "c5868680-41ac-4f24-80cb-1288114b6028",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24b7f501-b9d4-4eee-912b-12889e1cea84",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "ATR001"
+    }, {
+      "id": "ba9fd4c5-2586-4cb2-9152-99f092c44ff8",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72d452dc-8a8f-490e-a75a-fdd364e70392",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "001"
+    }, {
+      "id": "1883fdfa-aa41-463b-a7d4-41c4b17892bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Activo",
+      "targets": [
+        ["id=EntidadNueva_Activo", "id"],
+        ["name=EntidadNueva.Activo", "name"],
+        ["css=#EntidadNueva_Activo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Activo']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3deaa7f9-9821-4fc5-bd0e-9e7ade6d81ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Requerido",
+      "targets": [
+        ["id=EntidadNueva_Requerido", "id"],
+        ["name=EntidadNueva.Requerido", "name"],
+        ["css=#EntidadNueva_Requerido", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Requerido']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33b74c62-8d58-4955-ae41-819144f26c3e",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_ValorMinimo",
+      "targets": [
+        ["id=EntidadNueva_ValorMinimo", "id"],
+        ["name=EntidadNueva.ValorMinimo", "name"],
+        ["css=#EntidadNueva_ValorMinimo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_ValorMinimo']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c2f77cf-fee6-44f7-bcb0-26baf771e6a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_EsquemaID",
+      "targets": [
+        ["id=EntidadNueva_EsquemaID", "id"],
+        ["name=EntidadNueva.EsquemaID", "name"],
+        ["css=#EntidadNueva_EsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_EsquemaID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Proveedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c10f0aa-f8ba-4c73-bd9c-af3dc2075e23",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_ValorMinimo",
+      "targets": [
+        ["id=EntidadNueva_ValorMinimo", "id"],
+        ["name=EntidadNueva.ValorMinimo", "name"],
+        ["css=#EntidadNueva_ValorMinimo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_ValorMinimo']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ac717d4-1041-433a-ab70-2fda869eb9f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_ValorMinimo",
+      "targets": [
+        ["id=EntidadNueva_ValorMinimo", "id"],
+        ["name=EntidadNueva.ValorMinimo", "name"],
+        ["css=#EntidadNueva_ValorMinimo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_ValorMinimo']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "e2001b1f-80d9-45d7-a6da-a1206b3bf2b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_ValorMaximo",
+      "targets": [
+        ["id=EntidadNueva_ValorMaximo", "id"],
+        ["name=EntidadNueva.ValorMaximo", "name"],
+        ["css=#EntidadNueva_ValorMaximo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_ValorMaximo']", "xpath:attributes"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46daa34f-d2f4-46a3-8294-47e9fc0ca4b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_ValorMaximo",
+      "targets": [
+        ["id=EntidadNueva_ValorMaximo", "id"],
+        ["name=EntidadNueva.ValorMaximo", "name"],
+        ["css=#EntidadNueva_ValorMaximo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_ValorMaximo']", "xpath:attributes"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "f4b6060b-31dd-4f49-9693-a35b7cc55329",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Guardar']", "xpath:attributes"],
+        ["xpath=//div[14]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "62b86ce4-add5-4f90-95e8-99d85a52ad97",
+    "name": "Crear atributo cadena",
+    "commands": [{
+      "id": "8d16b9a0-b808-4f39-bdc8-dc64439be14d",
+      "comment": "",
+      "command": "open",
+      "target": "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56de5756-945e-438a-8cbc-9cbd8ee738eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6bb10ad-5d2e-46dd-a562-c6f8eea73f4e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo",
+      "targets": [
+        ["linkText=Atributo", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03796b2b-032f-4113-99e2-d031d79210a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuLink",
+      "targets": [
+        ["id=dropdownMenuLink", "id"],
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=#dropdownMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06494282-ec27-402d-967d-7c0615c86d18",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo Cadena",
+      "targets": [
+        ["linkText=Atributo Cadena", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo Cadena')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo/Cadena/Create/0/cGFnZT0vSW5kZXgmYXJlYT1BdHJpYnV0bw%3D%3D')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo Cadena')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe4b0ddf-1e33-4aed-b586-7775a7b4040c",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a4d7d20-5eb9-42fa-a307-29910237fd15",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Cadena"
+    }, {
+      "id": "0f7cf585-9fc3-4e57-af52-38980fa674f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a379fa76-4602-4546-b848-2ba2dc2a03b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Atributo cadena"
+    }, {
+      "id": "2c655ab8-5e7a-4283-b23d-8bf4ade44ba4",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc3172a5-d55e-4c0d-9abd-4b5aec65ab0e",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "ATR002"
+    }, {
+      "id": "95f0d7e5-7b3e-4250-b536-a2122ff4436e",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87e50c76-bd15-4350-ac81-3130fd5f409f",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "002"
+    }, {
+      "id": "04ec8a42-a88a-4bb8-9346-dfaa73e7d34d",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Activo",
+      "targets": [
+        ["id=EntidadNueva_Activo", "id"],
+        ["name=EntidadNueva.Activo", "name"],
+        ["css=#EntidadNueva_Activo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Activo']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e85666bc-025b-4a44-9c5d-96181ffe295b",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Requerido",
+      "targets": [
+        ["id=EntidadNueva_Requerido", "id"],
+        ["name=EntidadNueva.Requerido", "name"],
+        ["css=#EntidadNueva_Requerido", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Requerido']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dc1ca07-d004-42f1-a151-7314433e9337",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_EsquemaID",
+      "targets": [
+        ["id=EntidadNueva_EsquemaID", "id"],
+        ["name=EntidadNueva.EsquemaID", "name"],
+        ["css=#EntidadNueva_EsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_EsquemaID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Proveedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5507f32-9fe2-44fb-80ec-07318abd4fcc",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_LongitudMinima",
+      "targets": [
+        ["id=EntidadNueva_LongitudMinima", "id"],
+        ["name=EntidadNueva.LongitudMinima", "name"],
+        ["css=#EntidadNueva_LongitudMinima", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_LongitudMinima']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b3e93f1-77d8-43bc-a73f-98ab22d5f5fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_LongitudMinima",
+      "targets": [
+        ["id=EntidadNueva_LongitudMinima", "id"],
+        ["name=EntidadNueva.LongitudMinima", "name"],
+        ["css=#EntidadNueva_LongitudMinima", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_LongitudMinima']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "0a5b4b96-8499-45e1-943e-b48731ead257",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_LongitudMaxima",
+      "targets": [
+        ["id=EntidadNueva_LongitudMaxima", "id"],
+        ["name=EntidadNueva.LongitudMaxima", "name"],
+        ["css=#EntidadNueva_LongitudMaxima", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_LongitudMaxima']", "xpath:attributes"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d493834f-4726-48af-b460-9e5a13848691",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_LongitudMaxima",
+      "targets": [
+        ["id=EntidadNueva_LongitudMaxima", "id"],
+        ["name=EntidadNueva.LongitudMaxima", "name"],
+        ["css=#EntidadNueva_LongitudMaxima", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_LongitudMaxima']", "xpath:attributes"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": "60"
+    }, {
+      "id": "1f43113d-c12c-40c4-a9ff-29b2d3b4ee6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Guardar']", "xpath:attributes"],
+        ["xpath=//div[13]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "88a9c7af-396f-4e2b-a3e9-05b0a92a2181",
+    "name": "Eliminar esquema",
+    "commands": [{
+      "id": "920c18c6-ed65-4f1d-8068-78ca0bb1ecfc",
+      "comment": "",
+      "command": "open",
+      "target": "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f08ed5e-fa8e-4e8f-87d3-e46d3242c396",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10f0b8c9-bb04-4b05-8f07-8b5e0e21adcb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Esquema",
+      "targets": [
+        ["linkText=Esquema", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Esquema')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Esquema')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Esquema')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e19947a-12ea-45da-bffc-2964d208ac1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(3) img",
+      "targets": [
+        ["css=td:nth-child(3) img", "css:finder"],
+        ["xpath=//img[@alt='Eliminar']", "xpath:img"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5b38c4c-9daf-447f-adb4-11c6c9fd2a6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Eliminar']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "02892bf4-5949-4550-8cd0-d4dc561b8184",
+    "name": "Crear atributo fecha y hora",
+    "commands": [{
+      "id": "c914975d-55f2-4c02-bcd3-77e568bafde4",
+      "comment": "",
+      "command": "open",
+      "target": "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app/Esquema",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e3594dc-929e-4301-aeef-f1d70281b16d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85e68108-8824-4a46-8191-433d8fa7f257",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo",
+      "targets": [
+        ["linkText=Atributo", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78910b00-7a8f-479b-b4af-0aaa539b58d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuLink",
+      "targets": [
+        ["id=dropdownMenuLink", "id"],
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=#dropdownMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43c0933c-6772-46ef-a738-72591c6f04ad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo Fecha Hora",
+      "targets": [
+        ["linkText=Atributo Fecha Hora", "linkText"],
+        ["css=.dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo Fecha Hora')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo/FechaHora/Create/0/cGFnZT0vSW5kZXgmYXJlYT1BdHJpYnV0bw%3D%3D')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo Fecha Hora')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c122958d-271c-4be5-bf62-e778c78ea064",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a663de2-e85b-45a6-81f1-ba2fc94d1d95",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Fecha y hora"
+    }, {
+      "id": "7c23f0e5-6601-4e1a-adc5-fdfed4d00fe6",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed80c4c3-fe24-432b-b457-2bdcdd2f4252",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Atributo fecha y hora"
+    }, {
+      "id": "b07dc02d-8259-497e-a7f3-b768aa52798f",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dd4bf94-0324-440d-bf2f-8e4e24475e59",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "ATR003"
+    }, {
+      "id": "72487c47-09ba-40b0-919a-2e206ca22fc6",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71d3883d-4965-4610-a181-3449fc19d114",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "003"
+    }, {
+      "id": "e9017dfd-aed0-46e4-8040-5674edec5deb",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Activo",
+      "targets": [
+        ["id=EntidadNueva_Activo", "id"],
+        ["name=EntidadNueva.Activo", "name"],
+        ["css=#EntidadNueva_Activo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Activo']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91a8ac66-0ac7-4590-b94d-f83ff56912b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Requerido",
+      "targets": [
+        ["id=EntidadNueva_Requerido", "id"],
+        ["name=EntidadNueva.Requerido", "name"],
+        ["css=#EntidadNueva_Requerido", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Requerido']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7b448a5-41fa-4689-b80a-e4ff06e60f58",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_EsquemaID",
+      "targets": [
+        ["id=EntidadNueva_EsquemaID", "id"],
+        ["name=EntidadNueva.EsquemaID", "name"],
+        ["css=#EntidadNueva_EsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_EsquemaID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Proveedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad93f508-4ef6-4b5b-8184-f78a130d0339",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Guardar']", "xpath:attributes"],
+        ["xpath=//div[14]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1883948a-c940-46c9-9af8-8a6bd8efd10e",
+    "name": "Crear atributo lógico",
+    "commands": [{
+      "id": "c3dd12ca-699f-4df8-bd15-c3457efce0f5",
+      "comment": "",
+      "command": "open",
+      "target": "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "461696ec-250c-434b-aa12-3f9ad44b36d2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "821acf5b-2837-4996-b344-c89cf01a35de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo",
+      "targets": [
+        ["linkText=Atributo", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "517bea0f-65c8-4760-930a-80e2ade98a9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuLink",
+      "targets": [
+        ["id=dropdownMenuLink", "id"],
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=#dropdownMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4da3cd6f-cbdc-43e7-abdc-1346e5dadc48",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo Lógico",
+      "targets": [
+        ["linkText=Atributo Lógico", "linkText"],
+        ["css=.dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo Lógico')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo/Logico/Create/0/cGFnZT0vSW5kZXgmYXJlYT1BdHJpYnV0bw%3D%3D')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo Lógico')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ef43ba8-1358-4a7f-8d8d-847687a02169",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6eb77f3-f568-4653-8359-8f188f744b1e",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Lógico"
+    }, {
+      "id": "5538ad45-6a5b-4391-8057-67ef880edf59",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8811d22-904f-47d2-be8c-0a08706d5d82",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Atributo lógico"
+    }, {
+      "id": "bbf54e9e-bda6-4178-ad29-db8bc0c68207",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bbae76e-2bfd-40a2-9427-630dc84d59a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "ATR004"
+    }, {
+      "id": "90e4168d-cc89-4a28-8cab-b67e8a92d92a",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba774fdb-dbdc-4aaf-bdaa-efe942a4d031",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "004"
+    }, {
+      "id": "a33f94f7-4ea8-48b2-a3fe-270a44bd89bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Activo",
+      "targets": [
+        ["id=EntidadNueva_Activo", "id"],
+        ["name=EntidadNueva.Activo", "name"],
+        ["css=#EntidadNueva_Activo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Activo']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41cf0067-1836-4551-a8fd-ed1032f19002",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Requerido",
+      "targets": [
+        ["id=EntidadNueva_Requerido", "id"],
+        ["name=EntidadNueva.Requerido", "name"],
+        ["css=#EntidadNueva_Requerido", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Requerido']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2cf3031-3d2b-4b18-84c9-6cee62130823",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_EsquemaID",
+      "targets": [
+        ["id=EntidadNueva_EsquemaID", "id"],
+        ["name=EntidadNueva.EsquemaID", "name"],
+        ["css=#EntidadNueva_EsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_EsquemaID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Proveedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8848292b-54cb-40d1-a425-a1d4eb378e4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Guardar']", "xpath:attributes"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "299231e7-1d71-42fa-8866-f727497fff58",
+    "name": "Crear atributo geometría",
+    "commands": [{
+      "id": "766da435-97e4-47d2-a26a-ac53b6bb8557",
+      "comment": "",
+      "command": "open",
+      "target": "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d72ea7fb-0f0f-45f9-8598-c0872dbbeddf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c78de79-05ba-4cf8-98d9-5af19b0cae42",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo",
+      "targets": [
+        ["linkText=Atributo", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "920237af-cbc5-411f-87f0-9f95be82e651",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuLink",
+      "targets": [
+        ["id=dropdownMenuLink", "id"],
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=#dropdownMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecc62910-d163-48e6-a305-856f1d0f7616",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo Geometría",
+      "targets": [
+        ["linkText=Atributo Geometría", "linkText"],
+        ["css=.dropdown-item:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo Geometría')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo/Geometria/Create/0/cGFnZT0vSW5kZXgmYXJlYT1BdHJpYnV0bw%3D%3D')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo Geometría')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d1c3c3f-7bed-4536-bcbb-45686ebf76d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "462171d6-8e67-4bc0-90d1-046719ff2cc9",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Geometría"
+    }, {
+      "id": "b1c2c939-40fa-4d19-9b4d-e79532a4a67c",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "370aa574-50cb-4d97-a4a7-7f82c8e29827",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Atributo geometría"
+    }, {
+      "id": "82a0a25c-0609-4616-ad35-ad61be943ec8",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bc92515-3cce-4006-b032-036f1831d2e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "ATR005"
+    }, {
+      "id": "92d4b3a1-6185-4244-8257-e3c3ea5ec414",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2602d7ed-9665-479b-a2ed-e0bf3f3da3fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "005"
+    }, {
+      "id": "057361cc-1bd9-492c-a4a3-f53368335a4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Activo",
+      "targets": [
+        ["id=EntidadNueva_Activo", "id"],
+        ["name=EntidadNueva.Activo", "name"],
+        ["css=#EntidadNueva_Activo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Activo']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95e2efc3-63df-4b4d-a84f-bbacd40d4472",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Requerido",
+      "targets": [
+        ["id=EntidadNueva_Requerido", "id"],
+        ["name=EntidadNueva.Requerido", "name"],
+        ["css=#EntidadNueva_Requerido", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Requerido']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "259268f3-06ed-476b-b9bb-fe332700f841",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=EntidadNueva_EsquemaID",
+      "targets": [
+        ["id=EntidadNueva_EsquemaID", "id"],
+        ["name=EntidadNueva.EsquemaID", "name"],
+        ["css=#EntidadNueva_EsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_EsquemaID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Proveedores')]", "xpath:innerText"]
+      ],
+      "value": "72.99999904632568,11.266632080078125"
+    }, {
+      "id": "9b0ef1b4-e1cf-4950-80fe-0375a733e998",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=EntidadNueva_EsquemaID",
+      "targets": [
+        ["id=EntidadNueva_EsquemaID", "id"],
+        ["name=EntidadNueva.EsquemaID", "name"],
+        ["css=#EntidadNueva_EsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_EsquemaID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Proveedores')]", "xpath:innerText"]
+      ],
+      "value": "72.99999904632568,11.266632080078125"
+    }, {
+      "id": "de43088e-7a0c-471e-b549-97d9e8a46197",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=EntidadNueva_EsquemaID",
+      "targets": [
+        ["id=EntidadNueva_EsquemaID", "id"],
+        ["name=EntidadNueva.EsquemaID", "name"],
+        ["css=#EntidadNueva_EsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_EsquemaID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Proveedores')]", "xpath:innerText"]
+      ],
+      "value": "72.99999904632568,11.266632080078125"
+    }, {
+      "id": "ad138375-27a7-43c3-9df3-fd1a551e9c84",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_EsquemaID",
+      "targets": [
+        ["id=EntidadNueva_EsquemaID", "id"],
+        ["name=EntidadNueva.EsquemaID", "name"],
+        ["css=#EntidadNueva_EsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_EsquemaID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Proveedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14c5de23-a1a8-438e-9d17-eeed25a9b31d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Guardar']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "45c446f4-7126-472f-9411-f16ceb451649",
+    "name": "Crear atributo imagen",
+    "commands": [{
+      "id": "dbe52504-e54a-4ae6-92f8-9c6c2a0823d0",
+      "comment": "",
+      "command": "open",
+      "target": "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67132c90-4b3d-4d87-b413-6abee3a81e16",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9044d27-4685-48e8-9e3f-5febfd064e2f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo",
+      "targets": [
+        ["linkText=Atributo", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d15e0bf2-5be5-4ff3-a8ac-a54439bb0bf3",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuLink",
+      "targets": [
+        ["id=dropdownMenuLink", "id"],
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=#dropdownMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d850255-db09-4398-bbbc-d920eb099ce1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo Imágen",
+      "targets": [
+        ["linkText=Atributo Imágen", "linkText"],
+        ["css=.dropdown-item:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo Imágen')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo/Imagen/Create/0/cGFnZT0vSW5kZXgmYXJlYT1BdHJpYnV0bw%3D%3D')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo Imágen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "775b5ca8-d85c-4653-867e-693cf89bc516",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fc0e5ea-df36-4d4b-af9e-934384f06cba",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Imagen"
+    }, {
+      "id": "3ced98eb-fbe7-44f9-a70f-c11f1f909379",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1890cb0f-fe71-499c-954b-604aa120f11d",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Atributo imagen"
+    }, {
+      "id": "fcc215a3-54cd-415b-93a5-c94dd6b8df6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36431cd0-bf44-498b-afb0-fd860af84fce",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "ATR006"
+    }, {
+      "id": "205a007c-4f1b-4dcb-af51-c9ff1130dc9a",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb3b4438-b97a-4b04-9bc1-60c6f23c94ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "006"
+    }, {
+      "id": "101a8271-54cd-4ba5-b45e-efd0596faae6",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Activo",
+      "targets": [
+        ["id=EntidadNueva_Activo", "id"],
+        ["name=EntidadNueva.Activo", "name"],
+        ["css=#EntidadNueva_Activo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Activo']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a841501e-6b59-4ce3-897b-d7ead5172e2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Requerido",
+      "targets": [
+        ["id=EntidadNueva_Requerido", "id"],
+        ["name=EntidadNueva.Requerido", "name"],
+        ["css=#EntidadNueva_Requerido", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Requerido']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8895a4d3-0b05-4f27-9848-63111994d1f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_EsquemaID",
+      "targets": [
+        ["id=EntidadNueva_EsquemaID", "id"],
+        ["name=EntidadNueva.EsquemaID", "name"],
+        ["css=#EntidadNueva_EsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_EsquemaID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Proveedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc75cce8-7c62-479e-bd60-53e1fc9744dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Guardar']", "xpath:attributes"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ae9307d6-7837-4edc-b5cc-2a230a0be64c",
+    "name": "Crear atributo esquema",
+    "commands": [{
+      "id": "5c3cf32c-e1d4-42e6-a70a-8d0c44ac7177",
+      "comment": "",
+      "command": "open",
+      "target": "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34aba031-df33-4813-ad58-5b51d48f6070",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec316fb4-6d2d-4e14-aff4-458b5a6dc9bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo",
+      "targets": [
+        ["linkText=Atributo", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e92fd94-c739-42e2-a566-9a372c0d8d69",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuLink",
+      "targets": [
+        ["id=dropdownMenuLink", "id"],
+        ["linkText=Crear nuevo", "linkText"],
+        ["css=#dropdownMenuLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear nuevo')]", "xpath:link"],
+        ["xpath=//a[@id='dropdownMenuLink']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93c8fbab-959b-4e10-8873-931da48b2b3e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo Esquema",
+      "targets": [
+        ["linkText=Atributo Esquema", "linkText"],
+        ["css=.dropdown-item:nth-child(7)", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo Esquema')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo/Esquema/Create/0/cGFnZT0vSW5kZXgmYXJlYT1BdHJpYnV0bw%3D%3D')]", "xpath:href"],
+        ["xpath=//a[7]", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo Esquema')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f831897f-7d93-4671-b6fd-383f26187709",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed1e6304-7e67-4db7-b510-843e997e7910",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Nombre",
+      "targets": [
+        ["id=EntidadNueva_Nombre", "id"],
+        ["name=EntidadNueva.Nombre", "name"],
+        ["css=#EntidadNueva_Nombre", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Nombre']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Esquema"
+    }, {
+      "id": "9045f460-679f-499a-805a-f358eb156e63",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "321038e0-bd21-4614-a375-bdbe4d4edc91",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_Descripcion",
+      "targets": [
+        ["id=EntidadNueva_Descripcion", "id"],
+        ["name=EntidadNueva.Descripcion", "name"],
+        ["css=#EntidadNueva_Descripcion", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Descripcion']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Atributo esquema"
+    }, {
+      "id": "63a8e315-40e9-4846-b9c3-9dc64018858f",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa1560dc-1c69-43dd-bc48-3166d5afdb4e",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12b50a35-d98d-42a4-88f7-835b43a9c1ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoInterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoInterno", "id"],
+        ["name=EntidadNueva.CodigoInterno", "name"],
+        ["css=#EntidadNueva_CodigoInterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoInterno']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "ATR007"
+    }, {
+      "id": "315a0e33-b6f4-44cb-af52-eec01beed815",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6be4acd3-eb41-455b-bd95-cf48f81db247",
+      "comment": "",
+      "command": "type",
+      "target": "id=EntidadNueva_CodigoExterno",
+      "targets": [
+        ["id=EntidadNueva_CodigoExterno", "id"],
+        ["name=EntidadNueva.CodigoExterno", "name"],
+        ["css=#EntidadNueva_CodigoExterno", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_CodigoExterno']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "007"
+    }, {
+      "id": "5026cbe5-6bcc-413c-ac8c-d56f2d1e6ca2",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Activo",
+      "targets": [
+        ["id=EntidadNueva_Activo", "id"],
+        ["name=EntidadNueva.Activo", "name"],
+        ["css=#EntidadNueva_Activo", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Activo']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d24875e-1653-4e21-9c77-c2f5797eb415",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_Requerido",
+      "targets": [
+        ["id=EntidadNueva_Requerido", "id"],
+        ["name=EntidadNueva.Requerido", "name"],
+        ["css=#EntidadNueva_Requerido", "css:finder"],
+        ["xpath=//input[@id='EntidadNueva_Requerido']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd12c8da-a138-43df-b831-bedf142e8984",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_EsquemaID",
+      "targets": [
+        ["id=EntidadNueva_EsquemaID", "id"],
+        ["name=EntidadNueva.EsquemaID", "name"],
+        ["css=#EntidadNueva_EsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_EsquemaID']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Proveedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3ea11a8-c0df-4830-96a0-9fd9fa1979e8",
+      "comment": "",
+      "command": "click",
+      "target": "id=EntidadNueva_TipoEsquemaID",
+      "targets": [
+        ["id=EntidadNueva_TipoEsquemaID", "id"],
+        ["name=EntidadNueva.TipoEsquemaID", "name"],
+        ["css=#EntidadNueva_TipoEsquemaID", "css:finder"],
+        ["xpath=//select[@id='EntidadNueva_TipoEsquemaID']", "xpath:attributes"],
+        ["xpath=//div[10]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "024de469-9e15-480e-bd4d-c12e824c1f1b",
+      "comment": "",
+      "command": "select",
+      "target": "id=EntidadNueva_TipoEsquemaID",
+      "targets": [],
+      "value": "label=Proveedores"
+    }, {
+      "id": "7abe3bd0-3c82-4ffa-9a7c-44ff6fcae79b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Guardar']", "xpath:attributes"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "36bd85de-2baa-4edc-b1b1-df6336fd0a93",
+    "name": "Eliminar atributo",
+    "commands": [{
+      "id": "30f477cf-e56c-4059-a29b-9257e5043140",
+      "comment": "",
+      "command": "open",
+      "target": "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28c01c27-185e-46af-b552-94a45dec6f53",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e06d6a7c-3944-4219-af4e-27e974eaf77c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Atributo",
+      "targets": [
+        ["linkText=Atributo", "linkText"],
+        ["css=.nav-item:nth-child(5) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Atributo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/test/app/Atributo')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Atributo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "793ede20-8895-4776-a1ef-ed57269c898f",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > td:nth-child(3) img",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(3) img", "css:finder"],
+        ["xpath=//img[@alt='Eliminar']", "xpath:img"],
+        ["xpath=//td[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0f90276-9ce2-4884-9c33-658231ebf48e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Eliminar']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ba200dbd-0e30-44de-95be-3663d2501a1d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c2858047-f3bb-48ec-bda7-24a075b4dddc"]
+  }],
+  "urls": ["http://ptesa-env-more.eastus.cloudapp.azure.com:8081/", "http://ptesa-env-more.eastus.cloudapp.azure.com:8081/test/app"],
+  "plugins": []
+}
